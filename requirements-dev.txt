@@ -5,4 +5,5 @@ flake8-eradicate
 flake8-todo
 mypy
 setuptools
+twine
 wheel

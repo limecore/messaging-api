@@ -13,9 +13,12 @@ dist: force
 flake8: force
 	flake8 src/
 
-lint: black flake8 mypy
+lint: black flake8
 
 mypy: force
 	mypy src/
+
+publish-test: force
+	python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 
 force: ;

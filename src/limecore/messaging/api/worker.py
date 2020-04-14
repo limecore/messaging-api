@@ -1,7 +1,6 @@
 from injector import Injector, inject
 from typing import List, Type
 
-from .handler import Handler
 from .subscriber import Subscriber
 from .subscription import Subscription
 from .subscription_builder import SubscriptionBuilder
@@ -22,7 +21,7 @@ class Worker:
 
         # Register the Subscriptions
         for subscription in self._subscriptions:
-            subscriber.add_subscription(*subscription)
+            subscriber.add_subscription(subscription)
 
         # Run the Subscriber
         subscriber.run()

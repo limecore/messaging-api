@@ -1,8 +1,8 @@
-from .handler import Handler
+from .subscription import Subscription
 
 
 class Subscriber:
-    def add_subscription(self, impl: Handler, queue: str, routing_key: str):
+    def add_subscription(self, subscription: Subscription):
         raise NotImplementedError()
 
     def run(self):
