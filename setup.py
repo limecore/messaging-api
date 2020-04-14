@@ -8,7 +8,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name="limecore-messaging-api",
-    version="0.0.1",
+    version="0.1.0",
 
     description="limecore: Messaging API",
     long_description=long_description,
