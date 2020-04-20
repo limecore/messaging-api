@@ -1,3 +1,5 @@
+from .app_factory import AppFactory
+from .app import App
 from .handler import Handler
 from .message import Message
 from .publisher import Publisher
@@ -9,6 +11,8 @@ from .worker import Worker
 
 
 __all__ = [
+    "AppFactory",
+    "App",
     "Handler",
     "Message",
     "Publisher",
